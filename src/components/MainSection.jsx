@@ -7,7 +7,7 @@ import Wrap from "../styles/Wrap";
 
 import { Fade } from "react-reveal";
 
-const Section = props => {
+const MainSection = props => {
   return (
     <Wrap bg={props.bg}>
       <ItemText>
@@ -39,4 +39,4 @@ const Section = props => {
   );
 };
 
-export default Section;
+export default MainSection;

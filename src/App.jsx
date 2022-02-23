@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "./components/Header";
-import Home from "./components/Home";
+import HomePage from "./components/Home";
 import GlobalStyle from "./styles/GlobalStyle";
 
 const App = () => {
@@ -16,11 +16,11 @@ const App = () => {
 
   return (
     <div
-      style={{ filter: isBlur ? "blur(10px)" : "", transition: "filter 0.2s" }}
+      style={{ filter: isBlur ? "blur(10px)" : "", transition: "filter 0.3s" }}
     >
       <GlobalStyle />
       <Header open={sideBarOpen} close={sideBarClose} />
-      <Home />
+      <HomePage />
     </div>
   );
 };

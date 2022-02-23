@@ -1,10 +1,10 @@
 import HomeContainer from "../styles/HomeContainer";
-import Section from "./Section";
+import MainSection from "./MainSection";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <HomeContainer>
-      <Section
+      <MainSection
         title="Model 3"
         bg="model-3.jpg"
         desc="Order Online for Touchless Delivery"
@@ -12,11 +12,11 @@ const Home = () => {
         lowerBtn="existing inventory"
         arrow="down-arrow.svg"
       />
-      <Section />
-      <Section />
-      <Section />
+      <MainSection />
+      <MainSection />
+      <MainSection />
     </HomeContainer>
   );
 };
 
-export default Home;
+export default HomePage;

@@ -17,7 +17,7 @@ const BurgerMenu = styled.aside`
   padding: 0 50px;
 
   transform: ${props => (props.show ? "translateX(0)" : "translateX(100%)")};
-  transition: transform 0.2s;
+  transition: transform 0.3s;
 
   ul {
     list-style: none;
