@@ -7,7 +7,7 @@ const Wrap = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(images/model-s.jpg);
+  background-image: url(${props => `images/${props.bg}`});
 
   display: flex;
   flex-direction: column;

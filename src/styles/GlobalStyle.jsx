@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     width: 100%;
+    overflow-x: hidden;
   }
 
   @keyframes bounce {

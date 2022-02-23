@@ -5,21 +5,31 @@ import ItemText from "../styles/ItemText";
 import LowerButton from "../styles/LowerButton";
 import Wrap from "../styles/Wrap";
 
+import { Fade } from "react-reveal";
+
 const Section = props => {
   return (
-    <Wrap>
-      <ItemText>
-        <h1>Model S</h1>
-        <p>Order Online for Touchless Delivery</p>
-      </ItemText>
+    <Wrap bg={props.bg}>
+      <Fade bottom>
+        <ItemText>
+          <h1>{props.title}</h1>
+          <p>{props.desc}</p>
+        </ItemText>
+      </Fade>
 
       <div>
         <Buttons>
-          <Button>Custom Order</Button>
-          <LowerButton>Existing Inventory</LowerButton>
+          <Fade left>
+            <Button>{props.btnText}</Button>
+          </Fade>
+          {props.lowerBtn && (
+            <Fade right>
+              <LowerButton>{props.lowerBtn}</LowerButton>
+            </Fade>
+          )}
         </Buttons>
 
-        <ArrowImg src="images/down-arrow.svg" />
+        <ArrowImg src={`images/${props.arrow}`} />
       </div>
     </Wrap>
   );

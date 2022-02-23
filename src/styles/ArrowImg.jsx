@@ -7,6 +7,8 @@ const ArrowImg = styled.img`
   margin-left: 46%;
 
   animation: bounce infinite 1.5s;
+
+  cursor: pointer;
 `;
 
 export default ArrowImg;
