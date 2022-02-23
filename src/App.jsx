@@ -1,6 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
-import HomePage from "./components/Home";
+import HomePage from "./components/HomePage";
 import GlobalStyle from "./styles/GlobalStyle";
 
 const App = () => {

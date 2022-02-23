@@ -1,7 +1,7 @@
-import HeaderContainer from "../styles/HeaderContainer";
-import Menu from "../styles/Menu";
-import MenuFold from "../styles/MenuFold";
-import RightMenu from "../styles/RightMenu";
+import HeaderContainer from "../styles/HeaderContainer.styled";
+import Menu from "../styles/Menu.styled";
+import MenuFold from "../styles/MenuFold.styled";
+import RightMenu from "../styles/RightMenu.styled";
 import ReactDOM from "react-dom";
 import SideBar from "./SideBar";
 import { useState } from "react";

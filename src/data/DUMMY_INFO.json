@@ -1,0 +1,53 @@
+[
+    {
+        "id": 0,
+        "title": "Model S",
+        "image": "model-s.jpg",
+        "leftBtn": "custom order",
+        "rightBtn": "existing inventory"
+    },
+    {
+        "id": 1,
+        "title": "Model 3",
+        "image": "model-3.jpg",
+        "leftBtn": "custom order",
+        "rightBtn": "existing inventory"
+    },
+    {
+        "id": 2,
+        "title": "Model X",
+        "image": "model-x.jpg",
+        "leftBtn": "custom order",
+        "rightBtn": "existing inventory"
+    },
+    {
+        "id": 3,
+        "title": "Model Y",
+        "image": "model-y.jpg",
+        "leftBtn": "custom order",
+        "rightBtn": "existing inventory"
+    },
+    {
+        "id": 4,
+        "title": "Solar Panels",
+        "description": "Lowest Cost Solar Panels in America",
+        "image": "solar-panel.jpg",
+        "leftBtn": "order now",
+        "rightBtn": "learn more"
+    },
+    {
+        "id": 5,
+        "title": "Solar Roof",
+        "description": "Produce Clean Energy From Your Roof",
+        "image": "solar-roof.jpg",
+        "leftBtn": "order now",
+        "rightBtn": "learn more"
+    },
+    {
+        "id": 6,
+        "title": "Accessories",
+        "description": "",
+        "image": "accessories.jpg",
+        "leftBtn": "shop now"
+    }
+]
