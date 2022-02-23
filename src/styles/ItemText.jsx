@@ -7,6 +7,7 @@ const ItemText = styled.div`
   h1 {
     font-size: 38px;
     font-weight: 600;
+    margin-bottom: 10px;
   }
 `;
 

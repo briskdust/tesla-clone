@@ -2,8 +2,13 @@ import HeaderContainer from "../styles/HeaderContainer";
 import Menu from "../styles/Menu";
 import MenuFold from "../styles/MenuFold";
 import RightMenu from "../styles/RightMenu";
+import ReactDOM from "react-dom";
+import SideBar from "./SideBar";
+import { useState } from "react";
 
 const Header = () => {
+  const [sideBarOpen, setSideBar] = useState(false);
+
   return (
     <HeaderContainer>
       <img
@@ -27,9 +32,18 @@ const Header = () => {
         <ul>
           <li>Shop</li>
           <li>Account</li>
-          <MenuFold />
+          <MenuFold
+            onClick={() => {
+              setSideBar(true);
+            }}
+          />
         </ul>
       </RightMenu>
+
+      {ReactDOM.createPortal(
+        <SideBar show={sideBarOpen} />,
+        document.getElementById("side-bar")
+      )}
     </HeaderContainer>
   );
 };

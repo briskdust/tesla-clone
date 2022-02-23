@@ -4,7 +4,7 @@ import GlobalStyle from "./styles/GlobalStyle";
 
 const App = () => {
   return (
-    <div>
+    <div style={{ filter: "blur(10px)" }}>
       <GlobalStyle />
       <Header />
       <Home />
