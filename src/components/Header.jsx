@@ -6,8 +6,12 @@ import ReactDOM from "react-dom";
 import SideBar from "./SideBar";
 import { useState } from "react";
 
-const Header = () => {
+const Header = props => {
   const [sideBarOpen, setSideBar] = useState(false);
+
+  const onClose = () => {
+    setSideBar(false);
+  };
 
   return (
     <HeaderContainer>
@@ -34,6 +38,7 @@ const Header = () => {
           <li>Account</li>
           <MenuFold
             onClick={() => {
+              props.open();
               setSideBar(true);
             }}
           />
@@ -41,7 +46,12 @@ const Header = () => {
       </RightMenu>
 
       {ReactDOM.createPortal(
-        <SideBar show={sideBarOpen} />,
+        <SideBar
+          show={sideBarOpen}
+          blur={props.open}
+          unBlur={props.close}
+          onClose={onClose}
+        />,
         document.getElementById("side-bar")
       )}
     </HeaderContainer>

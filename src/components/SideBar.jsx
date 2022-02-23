@@ -5,7 +5,12 @@ const SideBar = props => {
   return (
     <BurgerMenu show={props.show}>
       <ul>
-        <Close />
+        <Close
+          onClick={() => {
+            props.onClose();
+            props.unBlur();
+          }}
+        />
         <li>Existing Inventory</li>
         <li>Used Inventory</li>
         <li>Trade-In</li>
@@ -24,4 +29,5 @@ const SideBar = props => {
     </BurgerMenu>
   );
 };
+
 export default SideBar;
